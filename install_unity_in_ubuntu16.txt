@@ -29,7 +29,6 @@ To activate this monoDevelop editor:
 Open unity -> Go to Edit -> Preferences -> External tools -> External script editor -> Click browse -> then go to this path /opt/Unity/MonoDevelop/bin -> choose MonoDevelop.exe
 
 To remove unity use the following command:
-
 sudo apt-get remove unity-editor -y
 
 
