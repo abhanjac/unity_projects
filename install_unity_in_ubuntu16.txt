@@ -1,0 +1,35 @@
+Go to this link:
+
+https://forum.unity.com/threads/unity-on-linux-release-notes-and-known-issues.350256/
+
+Then scroll down and go to the last page (https://forum.unity.com/threads/unity-on-linux-release-notes-and-known-issues.350256/page-2)
+
+The latest release link will be there.
+
+But be sure to use the debian package.
+
+The package is also copied here in the parent folder of this text file.
+
+Or you can do the following as mentioned in the link (https://askubuntu.com/questions/957991/how-can-i-install-unity-3d-game-engine-for-ubuntu)
+to get the debian package and install it.
+
+As well you want at least 15-20 GB free space on your HDD/SSD for this operation. Now that this all is out of the way do the following in a terminal:
+
+sudo apt install gdebi
+wget http://beta.unity3d.com/download/ee86734cf592/unity-editor_amd64-2017.2.0f3.deb
+sudo gdebi unity-editor_amd64-2017.2.0f3.deb
+
+Now the C# editor in unity is monoDevelop. This is already installed with the debian package installed earlier. 
+But this needs to be activated in unity. 
+
+So do the following (https://forum.unity.com/threads/how-to-install-unity-and-monodevelop-on-ubuntu-16-04-linux.485113/).
+In the link mentioned above for this, there are instructions for installing monoDevelop as well. But we will not be needing that as it is already there.
+
+To activate this monoDevelop editor:
+Open unity -> Go to Edit -> Preferences -> External tools -> External script editor -> Click browse -> then go to this path /opt/Unity/MonoDevelop/bin -> choose MonoDevelop.exe
+
+To remove unity use the following command:
+
+sudo apt-get remove unity-editor -y
+
+
